@@ -99,7 +99,7 @@ class ScriptElement {
     }
 }
 
-let options = {
+const optionsDefault = {
     src: path.join(__dirname, '/src'),
     dist: path.join(__dirname + '/dist'),
     bundleScripts: true,
@@ -116,7 +116,8 @@ let options = {
     injectScript: true,
     injectCSS: true
 };
-
+let options;
+/*
 if (process.argv[2]) {
     let arg = process.argv[2];
     let override;
@@ -139,16 +140,9 @@ if (process.argv[2]) {
     } else {
         console.log("\n=== WARNING: Invalid option override argument (has to be a valid JSON object or a path to a JSON file) - proceeding with default settings");
     }
-}
+}*/
 
 let ignoredPaths = [];
-for (let i = 0; i < options.ignore.length; i++) {
-    let path = options.ignore[i];
-    path = path.replace(/[.+?^${}()|[\]\\]/g, '\\$&');
-    path = path.replace(/[*]/g, '.*?');
-    
-    ignoredPaths.push(new RegExp(path));
-}
 
 let root = new Directory(null, 0);
 let bundleDirectory = new Directory('bundles', root.depth+1);
@@ -623,24 +617,51 @@ function generateRandomBundleName(len) {
     }
 }
 
-if (fs.existsSync(options.src)) {
-    !async function() {
-        console.log("\nStarting bundling process...\n====================\nSource: " + options.src + "\nDestination: " + options.dist + "\n");
-        
-        await processDirectory(options.src, root, '');
-        
-        console.log('');
-
-        if (fs.existsSync(options.dist)) {
-            rimraf.sync(options.dist);
+function main(optionsOverride) {
+    options = {};
+    for (let key in optionsDefault) {
+        options[key] = optionsDefault[key];
+    }
+    if (optionsOverride && typeof optionsOverride === 'object') {
+        for (let key in optionsOverride) {
+            if (options.hasOwnProperty(key)) {
+                options[key] = optionsOverride[key];
+            }
         }
-
-        root.cleanse();
-        root.write(options.dist, options.src);
-        
-        console.log("\nSuccess.");
-    }();
+    }
     
-} else {
-    throw new Error("No source directory found!");
+    for (let i = 0; i < options.ignore.length; i++) {
+        let path = options.ignore[i];
+        path = path.replace(/[.+?^${}()|[\]\\]/g, '\\$&');
+        path = path.replace(/[*]/g, '.*?');
+
+        ignoredPaths.push(new RegExp(path));
+    }
+    
+    return new Promise(async (resolve, reject) => {
+        if (fs.existsSync(options.src)) {
+            console.log("\nStarting bundling process...\n====================\nSource: " + options.src + "\nDestination: " + options.dist + "\n");
+
+            await processDirectory(options.src, root, '');
+
+            console.log('');
+
+            if (fs.existsSync(options.dist)) {
+                rimraf.sync(options.dist);
+            }
+
+            root.cleanse();
+            root.write(options.dist, options.src);
+
+            console.log("\nSuccess.");
+            
+            resolve(true);
+        } else {
+            reject("No source directory found!");
+        }
+    });
 }
+
+module.exports = {
+    bundle: main
+};

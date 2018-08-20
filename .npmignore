@@ -4,3 +4,4 @@ srcOrig/
 dist/
 config.json
 .gitignore
+test/
