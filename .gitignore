@@ -1,0 +1,7 @@
+src/
+src2/
+srcOrig/
+dist/
+config.json
+node_modules/
+package-lock.json
