@@ -1,4 +1,4 @@
-const sarcina = require('../index.js');
+const sarcina = require('../lib/index.js');
 const path = require('path');
 
 sarcina.bundle({

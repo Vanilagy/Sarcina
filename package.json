@@ -2,8 +2,9 @@
   "name": "sarcina",
   "version": "0.9.2",
   "description": "Fully-automatic project bundler",
-  "main": "index.js",
+  "main": "lib/index.js",
   "dependencies": {
+    "fs-copy-file-sync": "^1.1.1",
     "html-minifier": "^3.5.20",
     "rimraf": "^2.6.2",
     "rollup": "^0.64.1",
@@ -15,7 +16,5 @@
   },
   "author": "vanilagy",
   "license": "MIT",
-  "bin": {
-    
-  }
+  "bin": {}
 }
