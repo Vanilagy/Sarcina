@@ -1,7 +1,11 @@
 src/
 src2/
+src3/
 srcOrig/
 dist/
 config.json
 .gitignore
 test/
+node_modules/
+package-lock.json
+todo.txt
