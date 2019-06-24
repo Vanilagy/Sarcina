@@ -1,8 +1,8 @@
-src/
-src2/
-src3/
-srcOrig/
-dist/
+/src
+/src2/
+/src3/
+/srcOrig/
+dist
 config.json
 node_modules/
 package-lock.json
