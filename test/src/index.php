@@ -15,14 +15,13 @@
         <p>This is a very good website!</p>
         <!-- This is a comment! -->
 
+        <script src="./js/async.js" async></script>
+
         <?php echo "nothing" ?>
-        
-        
         
         <script defer>
             console.log("I am an inline script!");
         </script>
-        <!--
         
         <script defer>
             console.log("I am an inline script, too?");
@@ -31,7 +30,7 @@
         <script defer>
             console.log("I am an inline script, too?");
         </script>
-        <script src="./js/index.js" type="module"></script> -->
+        <script src="./js/index.js" type="module"></script>
 
         <script src="./js/main.js"></script>
         <script src="./js/util.js"></script>
