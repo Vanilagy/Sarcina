@@ -6,6 +6,6 @@ dist
 config.json
 .gitignore
 /test
-node_modules/
+node_modules
 package-lock.json
 todo.txt
