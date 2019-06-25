@@ -5,6 +5,7 @@ sarcina.bundle({
     src: 'src',
     minifyHtml: false,
     verbose: true,
+    ignore: []
 }).then((result) => {
     console.log(result);
 });
