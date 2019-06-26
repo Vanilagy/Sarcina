@@ -5,7 +5,9 @@ sarcina.bundle({
     src: 'src',
     minifyHtml: false,
     verbose: true,
-    ignore: []
+    minifyScript: false,
+    transpileScript: true,
+    ignore: [],
 }).then((result) => {
     console.log(result);
 });
