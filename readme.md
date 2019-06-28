@@ -63,7 +63,6 @@ body {
     background: blue;
     display: none;
 }
-
 h1 {
     font-size: 22px;
 }
