@@ -1,6 +1,14 @@
 # sarcina
+
+1. [Overview](#overview)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Programmatic examples](#programmatic-examples)
+5. [Options](#options)
+
+# Overview
 ## What is it? And why?
-Sarcina is as super-simple, zero-configuration and fast bundling tool made to get your web projects ready for production. It is meant to be a works-out-of-the-box alternative to traditional bundlers like Webpack, whose complicated configuration is often overkill for most projects.
+Sarcina is as super-simple, zero-configuration and fast bundling tool, made to get your web projects ready for production. It is meant to be a works-out-of-the-box alternative to traditional bundlers like Webpack, whose complicated configuration is often overkill for most projects.
 
 That said, Sarcina purposefully targets only *regular vanilla* non-framework web projects - in other words, projects that don't **need** to be built while working on them. I believe in-development build tools do nothing but slow down the developer, while simultaneously increasing project complexity. Sarcina is therefore intended to be run only when bundling a project for deployment, not constantly during development.
 
