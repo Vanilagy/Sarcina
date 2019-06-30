@@ -4,7 +4,7 @@ const path = require('path');
 sarcina.bundle({
     src: 'src',
     minifyHtml: false,
-    verbose: false,
+    verbose: true,
     minifyScript: true,
     bundleCss: true,
     transpileScript: true,
