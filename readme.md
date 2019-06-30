@@ -232,7 +232,7 @@ Name | Default | Description
 `handleInlineCss` | `true` | Specifies whether or not inline CSS (that inbetween `<style>` tags) will be included by the bundler.
 `injectCss` | `false` | When set to `true`, CSS will not be put into seperate files but instead be directly injected into the markup.
 `sanitizeInjectedCss` | `true` | Replace certain characters in the injected CSS with their unicode representation in order to prevent broken HTML. There's no real reason to turn this off.
-`csssFileAction` | `sarcina.REMOVE_BUNDLED` | Specifies what to do with .css files found in the input directory. Can be:<br><br>`sarcina.REMOVE_ALL` - Copy no CSS files into the output directory.<br>`sarcina.REMOVE_ALL` - Copy only those CSS files into the output directory that have not been included in any bundle.<br>`sarcina.KEEP_ALL` - Copy all CSS files into the output directory.
+`cssFileAction` | `sarcina.REMOVE_BUNDLED` | Specifies what to do with .css files found in the input directory. Can be:<br><br>`sarcina.REMOVE_ALL` - Copy no CSS files into the output directory.<br>`sarcina.REMOVE_ALL` - Copy only those CSS files into the output directory that have not been included in any bundle.<br>`sarcina.KEEP_ALL` - Copy all CSS files into the output directory.
 `missingCssFileTagAction` | `sarcina.KEEP` | Specifies the action taken with `<link>` tags that point to a local file which doesn't exist. Can be:<br><br>`sarcina.KEEP` - Keep the tags, but don't process them.<br>`sarcina.REMOVE` - Remove the tags.
 
 ### Script-related options
