@@ -1,8 +1,12 @@
 {
   "name": "sarcina",
-  "version": "0.9.8",
+  "version": "1.0.0",
   "description": "Fully-automatic project bundler",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vanilagy/sarcina"
+  },
   "dependencies": {
     "autoprefixer": "^9.6.0",
     "clean-css": "^4.2.1",
