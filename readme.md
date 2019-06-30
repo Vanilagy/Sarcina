@@ -243,11 +243,11 @@ Name | Default | Description
 ### Script-related options
 Name | Default | Description
 --- | --- | ---
-`bundleScripts` | `true` | When set to `true`, scripts will be bundled. Otherwise, all scripts will be left untouched.
+`bundleScript` | `true` | When set to `true`, scripts will be bundled. Otherwise, all scripts will be left untouched.
 `minifyScript` | `true` | When set to `true`, scripts will be minified using UglifyES.
 `transpileScript` | `false` | This option allows automatic transpilation of the JavaScript to earlier versions for increased browser support. Can be:<br><br>`false` - Don't transpile.<br>`true` - Transpile to ES5.<br>`sarcina.ES3` - Transpile to ES3.<br>`sarcina.ES5` - Transpile to ES5.<br>`sarcina.ES6`/`sarcina.ES2015` - Transpile to ES6.<br>`sarcina.ES2016` - Transpile to ES2016.<br>`sarcina.ES2017` - Transpile to ES2017.<br>`sarcina.ESNEXT` - Transpile to ESNext.
 `iifeScript` | `false` | When set to `true`, every bundle will be wrapped in an [IIFE](https://en.wikipedia.org/wiki/Immediately_invoked_function_expression). This can be done to prevent globals from being created. This can be the desired outcome, however it could also break the interactions between multiple bundles that depend on their global variables.
-`handleInlineScripts` | `true` | Specifies whether or not inline JavaScript (that inbetween `<script>` tags) will be included by the bundler.
+`handleInlineScript` | `true` | Specifies whether or not inline JavaScript (that inbetween `<script>` tags) will be included by the bundler.
 `injectScript` | `false` | When set to `true`, scripts will not be put into seperate files but instead be directly injected into the markup.
 `sanitizeInjectedScript` | `true` | Replace certain characters in the injected script with their unicode representation in order to prevent broken HTML. There's no real reason to turn this off.
 `scriptFileAction` | `sarcina.REMOVE_BUNDLED` | Specifies what to do with .js files found in the input directory. Can be:<br><br>`sarcina.REMOVE_ALL` - Copy no JS files into the output directory.<br>`sarcina.REMOVE_BUNDLED` - Copy only those JS files into the output directory that have not been included in any bundle.<br>`sarcina.KEEP_ALL` - Copy all JS files into the output directory.
