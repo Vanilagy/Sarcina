@@ -7,6 +7,7 @@ sarcina.bundle({
     verbose: true,
     minifyScript: true,
     transpileScript: true,
+    randomBundleNames: false,
     ignore: ['admin.html'],
 }).then((result) => {
     console.log(result);
