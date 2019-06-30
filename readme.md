@@ -10,7 +10,7 @@
 ## What is it? And why?
 Sarcina is as super-simple, zero-configuration and fast bundling tool, made to get your web projects ready for production. It is meant to be a works-out-of-the-box alternative to traditional bundlers like Webpack, whose complicated configuration is often overkill for most projects.
 
-That said, Sarcina purposefully targets only *regular vanilla* non-framework web projects - in other words, projects that don't **need** to be built while working on them. I believe in-development build tools do nothing but slow down the developer, while simultaneously increasing project complexity. Sarcina is therefore intended to be run only when bundling a project for deployment, not constantly during development.
+That said, Sarcina purposefully targets only *regular vanilla* non-framework web projects - in other words, projects that don't **need** to be built while working on them. In-development build tools usually add overhead to the development process, while simultaneously increasing project complexity. Sarcina is therefore intended to be run only when bundling a project for deployment, not constantly during development.
 
 ## What does it do?
 At its core, Sarcina creates a production distribution folder by processing every markup file in a folder, parsing it for CSS and JavaScript elements, creating bundles using those files and re-inserting links to the bundles back into the markup. During this process, your HTML can be minified, your CSS minified and autoprefixed, and your JavaScript minified and transpiled.

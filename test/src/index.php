@@ -23,6 +23,8 @@
         <script defer>
             console.log("I am an inline script!");
         </script>
+
+        hehe
         
         <script defer>
             console.log("I am an inline script, too?");
@@ -32,6 +34,8 @@
             console.log("I am an inline script, too?");
         </script>
         <script src="./js/index.js" type="module"></script>
+
+        hehe
 
         <script src="./js/main.js"></script>
         <script src="./js/util.js"></script>
