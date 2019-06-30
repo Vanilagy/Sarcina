@@ -10,7 +10,6 @@ sarcina.bundle({
     transpileScript: true,
     randomBundleNames: false,
     ignore: ['*.html'],
-    scriptInsertPosition: sarcina.SMART
 }).then((result) => {
     console.log(result);
 });
