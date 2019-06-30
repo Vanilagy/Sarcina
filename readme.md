@@ -169,12 +169,9 @@ const sarcina = require('sarcina');
 # Usage
 Sarcina has only one, core method:
 ## sarcina.bundle([options])
-```javascript
-sarcina.bundle([options]);
-```
-**Returns**: A promise resolving to an object once bundling is complete. This object contains the boolean property `success`, indicating if the bundling succeeded.
-
 - `options` A configuration object. [See the list of options.](#options)
+
+**Returns**: A promise resolving to an object once bundling is complete. This object contains the boolean property `success`, indicating if the bundling succeeded.
 
 # Programmatic examples
 In the following example, the folder `input` is bundled into the folder `output`, and the success of the operation is printed:
