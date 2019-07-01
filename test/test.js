@@ -11,6 +11,7 @@ sarcina.bundle({
     randomBundleNames: false,
     scriptFileAction: sarcina.KEEP_NECESSARY,
     ignore: ['*.html'],
+    handledCssFiles: 'all',
     handledScriptFiles: [],
     handledModuleFiles: ['index.js'],
 }).then((result) => {
