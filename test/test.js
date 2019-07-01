@@ -3,17 +3,17 @@ const path = require('path');
 
 sarcina.bundle({
     src: 'src',
-    minifyHtml: false,
+    minifyHtml: true,
     verbose: true,
     minifyScript: true,
-    bundleCss: false,
+    bundleCss: true,
+    optimizeCss: true,
     transpileScript: true,
     randomBundleNames: false,
-    scriptFileAction: sarcina.KEEP_NECESSARY,
-    ignore: ['*.html'],
-    handledCssFiles: 'all',
+    ignore: [],
+    handledCssFiles: [],
     handledScriptFiles: [],
-    handledModuleFiles: ['index.js'],
+    handledModuleFiles: [],
 }).then((result) => {
     console.log(result);
 });

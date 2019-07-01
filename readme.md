@@ -171,7 +171,7 @@ Sarcina has only one, core method:
 ## sarcina.bundle([options])
 - `options` A configuration object. [See the list of options.](#options)
 
-**Returns**: A promise resolving to an object once bundling is complete. This object contains the boolean property `success`, indicating if the bundling succeeded.
+**Returns**: A promise resolving to an object once bundling is complete. This object contains the boolean property `success`, indicating if the bundling succeeded, and the property `error`, which is `null` if there was none.
 
 # Programmatic examples
 In the following example, the folder `input` is bundled into the folder `output`, and the success of the operation is printed:
