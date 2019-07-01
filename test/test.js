@@ -9,7 +9,7 @@ sarcina.bundle({
     bundleCss: true,
     transpileScript: true,
     randomBundleNames: false,
-    ignore: [''],
+    ignore: ['*.html'],
 }).then((result) => {
     console.log(result);
 });
