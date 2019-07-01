@@ -9,7 +9,10 @@ sarcina.bundle({
     bundleCss: true,
     transpileScript: true,
     randomBundleNames: false,
+    scriptFileAction: sarcina.KEEP_NECESSARY,
     ignore: ['*.html'],
+    handledScriptFiles: [],
+    handledModuleFiles: ['index.js'],
 }).then((result) => {
     console.log(result);
 });
