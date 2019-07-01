@@ -6,7 +6,7 @@ sarcina.bundle({
     minifyHtml: false,
     verbose: true,
     minifyScript: true,
-    bundleCss: true,
+    bundleCss: false,
     transpileScript: true,
     randomBundleNames: false,
     scriptFileAction: sarcina.KEEP_NECESSARY,
