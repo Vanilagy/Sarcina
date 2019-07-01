@@ -30,6 +30,7 @@
             console.log("I am an inline script, too?");
         </script>
         <script src="./js/index.js" type="module"></script>
+        <script src="i point to nothing"></script>
         <script defer>
             console.log("I am an inline script, too?");
         </script>
