@@ -1,6 +1,8 @@
 const sarcina = require('../lib/index.js');
 const path = require('path');
 
+//return;
+
 sarcina.bundle({
     src: 'src',
     minifyHtml: false,
