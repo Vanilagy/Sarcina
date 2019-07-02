@@ -24,8 +24,12 @@
             console.log("I am an inline script!");
         </script>
 
-        hehe
-        
+        hehe1
+
+        <script type="module">
+            import './js/vars.js';
+            console.log("Oh well, I am an inline module script!");
+        </script>
         <script defer>
             console.log("I am an inline script, too?");
         </script>
@@ -36,7 +40,7 @@
         </script>
         <script src="./js/index.js" type="module"></script>
 
-        hehe
+        hehe2
 
         <script src="./js/main.js"></script>
         <script src="./js/util.js"></script>

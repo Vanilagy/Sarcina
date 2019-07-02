@@ -12,7 +12,7 @@ sarcina.bundle({
     transpileScript: true,
     randomBundleNames: false,
     ignore: [],
-    scriptInsertPosition: sarcina.END_OF_BODY,
+    scriptInsertPosition: sarcina.LOCAL,
     handledCssFiles: [],
     handledScriptFiles: [],
     handledModuleFiles: [],
