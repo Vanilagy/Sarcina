@@ -1,4 +1,4 @@
-# sarcina
+# Sarcina
 
 1. [Overview](#overview)
 2. [Installation](#installation)
