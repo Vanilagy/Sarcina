@@ -263,7 +263,7 @@ Name | Default | Description
 Name | Default | Description
 --- | --- | ---
 `removeEmptyDirectories` | `true` | Whether or not empty directories should be removed. A directory is considered empty if it or its subdirectories contain no files.
-`keep` | `[]` | An array containing [Globs](https://en.wikipedia.org/wiki/Glob_(programming)), specifying files and directories to be kept. Can be used to override certain automatic file deletion rules.
+`keep` | `[]` | An array containing [Globs](https://en.wikipedia.org/wiki/Glob_(programming)), specifying files and directories to be kept. Can be used to override certain automatic file deletion rules. Files listed in `keep` take precedence over `ignore`.
 `ignore` | `[]` | An array containing [Globs](https://en.wikipedia.org/wiki/Glob_(programming)), specifying files and directories to be ignored and not copied.
 `ignoreGit` | `true` | When set to `true`, `.git` and `.gitignore` will be ignored.
 `ignoreDsStore` | `true` | When set to `true`, DSStore files created by macOS will be ignored.
