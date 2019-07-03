@@ -9,7 +9,7 @@ sarcina.bundle({
     verbose: false,
     minifyScript: true,
     bundleCss: true,
-    bundleScript: false,
+    bundleScript: true,
     optimizeCss: true,
     autoprefixCss: true,
     transpileScript: true,
