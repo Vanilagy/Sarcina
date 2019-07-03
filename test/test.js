@@ -12,7 +12,7 @@ sarcina.bundle({
     bundleScript: true,
     optimizeCss: true,
     autoprefixCss: true,
-    transpileScript: true,
+    transpileScript: false,
     randomBundleNames: false,
     //ignore: ['*.html', ],
     //keep: ['plain.html'],

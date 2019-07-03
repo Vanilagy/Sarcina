@@ -17,6 +17,7 @@
         <!-- This is a comment! -->
 
         <script src="./js/async.js" async></script>
+        <script src="./js/index.js" async type="module"></script> <!-- async module script -->
 
         <?php echo "nothing" ?>
         
@@ -33,7 +34,7 @@
         <script defer>
             console.log("I am an inline script, too?");
         </script>
-        <script src="./js/index.js" type="module"></script>
+        <script src="./js/index.js"></script> <!-- module script, but omitting the type="module" -->
         <script src="i point to nothing"></script>
         <script defer>
             console.log("I am an inline script, too?");
