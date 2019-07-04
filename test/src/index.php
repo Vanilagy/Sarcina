@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Sarcina test!</title>
+        <link not-a-stylesheet="true">
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/about.css">
         <link rel="stylesheet" href="./css/input.css">
