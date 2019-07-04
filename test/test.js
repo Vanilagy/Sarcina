@@ -6,7 +6,7 @@ const path = require('path');
 sarcina.bundle({
     src: 'src',
     minifyHtml: false,
-    verbose: true,
+    verbose: false,
     minifyScript: false,
     minifyCss: false,
     bundleCss: true,
@@ -16,6 +16,7 @@ sarcina.bundle({
     transpileScript: false,
     handleInlineCss: true,
     handleInlineScript: true,
+    insertPolyfill: false,
     randomBundleNames: false,
     //ignore: ['*.html', ],
     //keep: ['plain.html'],
