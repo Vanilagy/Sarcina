@@ -7,11 +7,11 @@
         <link rel="stylesheet" href="./css/input.css">
         <link rel="stylesheet" href="./css/blaaa.css">
 
-        <style>
+        <!--<style>
             body {
                 background: red;
             }
-        </style>
+        </style>-->
     </head>
     <body>
         <p>This is a very good website!</p>

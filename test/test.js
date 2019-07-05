@@ -13,8 +13,18 @@ sarcina.bundle({
 //return;
 
 sarcina.bundle({
+    markupOptionOverride: {
+        'about.html': {
+            minifyMarkup: false,
+            insertPolyfill: true,
+            minifyCss: false,
+            injectCss: true,
+            minifyScript: false,
+            transpileScript: false
+        }
+    },
     src: 'src',
-    minifyHtml: false,
+    minifyMarkup: false,
     verbose: true,
     minifyScript: false,
     minifyCss: false,
@@ -27,8 +37,8 @@ sarcina.bundle({
     handleInlineScript: true,
     insertPolyfill: false,
     randomBundleNames: false,
-    ignore: ['*.html', ],
-    keep: ['plain.html'],
+    //ignore: ['*.html', ],
+    keep: ['about.html'],
     cssInsertPosition: sarcina.END_OF_HEAD,
     scriptInsertPosition: sarcina.LOCAL,
     missingScriptFileTagAction: sarcina.KEEP,

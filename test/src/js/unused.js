@@ -1,1 +1,1 @@
-// This is an used JavaScript file.
+// This is an unused JavaScript file.
