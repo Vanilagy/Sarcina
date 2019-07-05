@@ -43,9 +43,15 @@ sarcina.bundle({
     scriptInsertPosition: sarcina.LOCAL,
     missingScriptFileTagAction: sarcina.KEEP,
     missingCssFileTagAction: sarcina.REMOVE,
-    handledCssFiles: [],
-    handledScriptFiles: [],
+    handledCssFiles: 'all',
+    handledScriptFiles: 'all',
     handledModuleFiles: [],
+    individuallyHandledFilesOptionOverride: {
+        '**': {
+            minifyScript: true,
+            optimizeCss: true
+        }
+    }
 }).then((result) => {
     console.log(result);
 });
