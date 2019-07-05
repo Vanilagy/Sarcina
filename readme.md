@@ -274,3 +274,5 @@ Name | Default | Description
 Name | Default | Description
 --- | --- | ---
 `verbose` | `false` | When set to `true`, sarcina will constantly print the process of the bundling process.
+`markupOptionOverride` | {} | An object where its keys are [Globs](https://en.wikipedia.org/wiki/Glob_(programming)) and its values are a subset of options from this list, which are then used to override the options for a given markup file matching the glob. This can be used to override/change options for specific markup files, for example when we want leave one file un-minified.
+`individuallyHandledFilesOptionOverride` | {} | Same as `markupOptionOverride`, but instead can be used to target individually-handled files specified in `handledCssFiles`, `handledScriptFiles` and `handledModuleFiles`. Example: We might want to wrap all our bundles in IIFEs, but not individual JavaScript files. Hence, we would use this option and set `iifeScript` to `false` for all JavaScript files.
