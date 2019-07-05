@@ -225,7 +225,7 @@ Name | Default | Description
 --- | --- | ---
 `src` | `./src` | The path to the input directory.
 `dist` | `./dist` | The path to the output directory. This directory will be deleted and recreated on every run.
-`minifyHtml` | `true` | When set to `true`, HTML will be minified.
+`minifyMarkup` | `true` | When set to `true`, HTML will be minified.
 `randomBundleNames` | `true` | When set to `true`, bundles will be given random hexadecimal names. Otherwise, they will be numbered.
 
 ### CSS-related options
