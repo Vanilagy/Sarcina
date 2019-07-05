@@ -1,3 +1,4 @@
+[![npm version](https://img.shields.io/npm/v/sarcina.svg)](https://www.npmjs.com/package/sarcina)
 # Sarcina
 
 1. [Overview](#overview)
