@@ -1,6 +1,6 @@
 {
   "name": "sarcina",
-  "version": "1.7.4",
+  "version": "1.7.5",
   "description": "Fully-automatic web project bundler",
   "main": "lib/index.js",
   "repository": {
